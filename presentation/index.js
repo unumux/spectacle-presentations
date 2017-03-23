@@ -9,7 +9,8 @@ import {
   Text,
   List,
   ListItem,
-  CodePane
+  CodePane,
+  Appear
 } from "spectacle";
 
 // Import image preloader util
@@ -81,10 +82,18 @@ export default class Presentation extends React.Component {
                 Everyone build a slide!
             </Heading>
             <List>
-                <ListItem>Clone the repo at https://github.com/unumux/spectacle-presentations</ListItem>
-                <ListItem>Create a file in the presentation folder named YOURNAME.js</ListItem>
-                <ListItem>Import your component like I did on line 26 of this file</ListItem>
-                <ListItem>Use the component like I used it on line 90</ListItem>
+                <Appear>
+                    <ListItem>Clone the repo at https://github.com/unumux/spectacle-presentations</ListItem>
+                </Appear>
+                <Appear>                
+                    <ListItem>Create a file in the presentation folder named YOURNAME.js</ListItem>
+                </Appear>
+                <Appear>
+                    <ListItem>Import your component like I did on line 26 of this file</ListItem>
+                </Appear>
+                <Appear>
+                    <ListItem>Use the component like I used it on line 90</ListItem>
+                </Appear>
             </List>
          </Slide>
          <Slide bgColor="primary">
