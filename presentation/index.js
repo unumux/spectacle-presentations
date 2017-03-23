@@ -22,12 +22,8 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
-
-const images = {
-
-};
-
-preloader(images);
+// IMPORT EVERYONE HERE!
+import CarlSlide from "./carl";
 
 const theme = createTheme({
   primary: "white",
@@ -80,6 +76,26 @@ export default class Presentation extends React.Component {
                 source={require("raw-loader!../assets/deck.2.example")}
             />
          </Slide>
+         <Slide bgColor="primary">
+            <Heading fit>
+                Everyone build a slide!
+            </Heading>
+            <List>
+                <ListItem>Clone the repo at https://github.com/unumux/spectacle-presentations</ListItem>
+                <ListItem>Create a file in the presentation folder named YOURNAME.js</ListItem>
+                <ListItem>Import your component like I did on line 26 of this file</ListItem>
+                <ListItem>Use the component like I used it on line 90</ListItem>
+            </List>
+         </Slide>
+         <Slide bgColor="primary">
+            <Heading>
+                Documentation
+            </Heading>
+            <Text fit>
+                http://formidable.com/open-source/spectacle/docs/basic-concepts/
+            </Text>
+         </Slide>
+         <CarlSlide />
       </Deck>
     );
   }
