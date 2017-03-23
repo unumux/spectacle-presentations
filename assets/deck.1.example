@@ -1,0 +1,3 @@
+<Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+    
+</Deck>

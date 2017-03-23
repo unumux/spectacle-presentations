@@ -1,0 +1,8 @@
+<Slide bgColor="primary">
+    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        Presentations
+    </Heading>
+    <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+        with spectacle
+    </Heading>
+</Slide>

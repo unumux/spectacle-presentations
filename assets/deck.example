@@ -1,0 +1,21 @@
+<Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+    <Slide bgColor="primary">
+        <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        Presentations
+        </Heading>
+        <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+        with spectacle
+        </Heading>
+    </Slide>
+    <Slide bgColor="tertiary">
+        <Heading size={2} caps textColor="primary">
+            Benefits of Spectacle
+        </Heading>
+        <List>
+            <ListItem>Create presentations using JS/React</ListItem>
+            <ListItem>Consistent branding via themes</ListItem>
+            <ListItem>Collaboration with Git</ListItem>
+            <ListItem>Free hosting on Github Pages!</ListItem>
+        </List>
+    </Slide>
+</Deck>
